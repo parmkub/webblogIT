@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT SUPPORT</title>
+
+    <!-- CSS only -->
+    <link rel="shortcut icon"type="image/x-icon" href="assets\images\logo.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">    
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+  </head>
+  <body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md ">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/text_logo.png" height="50px" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto float-end ul-navbar">
+                <li class="nav-item px-3 px-md-0 active">
+                  <a class="nav-link" href="#">IT Blog</a>
+                </li>
+                <li class="nav-item px-3 px-md-0">
+                  <a class="nav-link" href="register.html">สมัครสมาชิก</a>
+                </li>
+                <li class="nav-item px-3 px-md-0">
+                  <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
+                </li>
+                <li class="nav-item px-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="assets/images/Uploads/avatar.png" width="40px" height="40px" alt="" class="profile-img">
+                      FirstName
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end mb-3" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="profile.html">
+                          <div class="d-flex align-items-center">
+                            <img src="assets/images/Uploads/avatar.png" width="40px" height="40px" alt="" class="profile-img">
+                            <div class="lh-sm p-3">
+                              <span class="font-weigh-bold">FirstName Lasname</span><br>
+                              <small>ดูโปรไฟล์ของคุณ</small>
+                            </div>
+                            
+                          </div>
+                        </a>
+                    </li>
+                      <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header class="page-header d-flex align-items-center">
+          <div class="container">
+            <h1 class="fw-bold">{{subject}}</h1>
+            <h2>{{title}}</h2>
+          </div>
+        </header>
+
+        <section class="container">
+          <div class="row justify-content-center">
+            <section class="col-12 col-md-8">
+              <img src="assets/images/logo_bg.jpg" class="avatar" alt="" />
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="ค้นหาบทความ...java,android,network,iot" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text btn-outline-info" id="basic-addon1"><i class="fas fa-search"></i></span>
+              </div>
+              
+            </section>
+          </div>
+          <div class="row py-5 g-3">
+            <section class="col-12 pb-3 text-center">
+              <h3>บทความล่าสุด</h3>
+            </section>
+
+            
+            <section class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow border-0 h-100">
+                
+                  <img src="http://i3.ytimg.com/vi/OJuhuPUZ_tY/maxresdefault.jpg" class="card-img-top" alt="...">
+                  
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title font-weight-bold lh-base">จำลองเว็บเซอร์เวอร์</h5>
+                  <p class="card-text">สอนการจำลอง Server ด้วย XAMPP PHP 7.4</p>
+                  <div class="mt-auto">
+                    <div class="star-rating">
+                      <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                      <!--(จำนวนคะแนน / 5 ดาว)*100 = x% -->
+                      <div class="star-current" style="width: 50%;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <small class="text-muted">4.5(50)</small>
+                    <small class="float-end"><i class="fas fa-eye"></i>1,000</small>
+                    <div class="d-grid  mt-2">
+                      <a href="blog-detail.html" class="btn btn-primary">
+                        READ MORE <i class="fas fa-arrow-circle-right"></i>
+                      </a>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow border-0 h-100">
+                
+                  <img src="http://i3.ytimg.com/vi/vblu1nIZQ_I/maxresdefault.jpg" class="card-img-top" alt="...">
+                  
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title font-weight-bold lh-base">ติดตั้ง Visual Studio Code</h5>
+                  <p class="card-text">สอนการติดตั้ง Visual Studio Code เวอร์ชั่นล่าสุด</p>
+                  <div class="mt-auto">
+                    <div class="star-rating">
+                      <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                      <!--(จำนวนคะแนน / 5 ดาว)*100 = x% -->
+                      <div class="star-current" style="width: 50%;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <small class="text-muted">4.5(50)</small>
+                    <small class="float-end"><i class="fas fa-eye"></i>1,000</small>
+                    <div class="d-grid  mt-2">
+                      <a href="blog-detail.html" class="btn btn-primary">
+                        READ MORE <i class="fas fa-arrow-circle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow border-0 h-100">
+                
+                  <img src="http://i3.ytimg.com/vi/7AdHb_1VgRg/maxresdefault.jpg" class="card-img-top" alt="...">
+                  
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title font-weight-bold lh-base">AdminLTE ยอดฮิต อัพเดทใหม่แล้วจ้า</h5>
+                  <p class="card-text">สอน Admin LTE อัพเดทใหม่อีกแล้วสินะ</p>
+                  <div class="mt-auto">
+                    <div class="star-rating">
+                      <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                      <!--(จำนวนคะแนน / 5 ดาว)*100 = x% -->
+                      <div class="star-current" style="width: 50%;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <small class="text-muted">4.5(50)</small>
+                    <small class="float-end"><i class="fas fa-eye"></i>1,000</small>
+                    <div class="d-grid  mt-2">
+                      <a href="blog-detail.html" class="btn btn-primary">
+                        READ MORE <i class="fas fa-arrow-circle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow border-0 h-100">
+                
+                  <img src="http://i3.ytimg.com/vi/qScx7AIdpn4/maxresdefault.jpg" class="card-img-top" alt="...">
+                  
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title font-weight-bold lh-base">Aเปลี่ยนภาพปกวีดีโอ facebook 2020</h5>
+                  <p class="card-text">เปลี่ยนภาพปกวีดีโอ facebook 2020</p>
+                  <div class="mt-auto">
+                    <div class="star-rating">
+                      <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                      <!--(จำนวนคะแนน / 5 ดาว)*100 = x% -->
+                      <div class="star-current" style="width: 50%;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <small class="text-muted">4.5(50)</small>
+                    <small class="float-end"><i class="fas fa-eye"></i>1,000</small>
+                    <div class="d-grid  mt-2">
+                      <a href="blog-detail.html" class="btn btn-primary">
+                        READ MORE <i class="fas fa-arrow-circle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow border-0 h-100">
+                
+                  <img src="http://i3.ytimg.com/vi/grsl0VcrI_4/maxresdefault.jpg" class="card-img-top" alt="...">
+                  
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title font-weight-bold lh-base">ความแตกต่างระหว่าง Bootstrap3 และ Bootstrap4</h5>
+                  <p class="card-text">Bootstrap3 และ Bootstrap4 ควรเลือกเรียนอะไรดี</p>
+                  <div class="mt-auto">
+                    <div class="star-rating">
+                      <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                      <!--(จำนวนคะแนน / 5 ดาว)*100 = x% -->
+                      <div class="star-current" style="width: 50%;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <small class="text-muted">4.5(50)</small>
+                    <small class="float-end"><i class="fas fa-eye"></i>1,000</small>
+                    <div class="d-grid  mt-2">
+                      <a href="blog-detail.html" class="btn btn-primary">
+                        READ MORE <i class="fas fa-arrow-circle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col-12 col-md-6 col-lg-4">
+              <div class="card shadow border-0 h-100">
+                
+                  <img src="http://i3.ytimg.com/vi/JceE01V0vx8/maxresdefault.jpg" class="card-img-top" alt="...">
+                  
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title font-weight-bold lh-base">sClass2 Chapter2 เริ่มต้นวิเคราะห์ Project และทำเอกสาร</h5>
+                  <p class="card-text">sClass2 Weblog Bootsrtap5 + Vuejs CDN + PHP</p>
+                  <div class="mt-auto">
+                    <div class="star-rating">
+                      <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                      <!--(จำนวนคะแนน / 5 ดาว)*100 = x% -->
+                      <div class="star-current" style="width: 50%;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <small class="text-muted">4.5(50)</small>
+                    <small class="float-end"><i class="fas fa-eye"></i>1,000</small>
+                    <div class="d-grid  mt-2">
+                      <a href="blog-detail.html" class="btn btn-primary">
+                        READ MORE <i class="fas fa-arrow-circle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </section>
+
+      
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                  <h6>About</h6>
+                  <p>
+                    🙏สอนการเขียนเว็บไซต์สำหรับมือใหม่😊
+                    <br> Angular1 Firebase VueJs2 HTML5 CSS3 PHP MySQLi Laravel6-8 Bootstrap4-5 
+
+                  </p>
+              </div>
+              <div class="col-md-3">
+                <h6>Categories</h6>
+                  <ul class="footer-links">
+                      <li><a href="https://www.youtube.com/watch?v=rf-P_m1zFIE&list=PLfan6e7_XlyrAxl3hDcKs6JizaW2mb6MK" target="_blank">Android</a> </li>
+                      <li><a href="https://www.youtube.com/watch?v=npquPde8HrQ"target="_blank">Arduino</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=Pm4hq_cbbiY"target="_blank">C#</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=RJZIJdYMsYg"target="_blank">JAVA</a> </li>
+                      <li><a href="https://www.youtube.com/watch?v=1cwTDsvrXC4&t=725s"target="_blank">JSP</a></li>
+                  </ul>            
+              </div>
+              <div class="col-md-3">
+                <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                    <li> <a href="https://www.facebook.com/profile.php?id=100000896713189"target="_blank"> IT's Blog</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100000896713189"target="_blank"> สมัครสมาชิก </a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100000896713189"target="_blank"> เข้าสู่ระบบ</a></li>
+                  </ul>            
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row text-center text-md-start">
+              <div class="col-12 col-md-8">
+                <p>
+                  Copyright &copy; 2020 All Rights Reserved by 
+                  <a href="https://appzstory.dev" target="_blank">Appstory Studio</a>
+                </p>
+              </div>
+              <div class="col-md-4">
+                  <ul class="social-icons text-center text-md-end">
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=100000896713189"target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                    </li>
+
+                    <li>
+                      <a href="https://www.youtube.com/channel/UCWjw5StvfegobVoj7NznS2w"target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </footer>
+
+        <div class="progressContainer">
+            <div class="progressBar">
+
+            </div>
+
+        </div>
+
+  </div>
+
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data(){
+              return{
+                subject: "IT's Blog",
+                title: "บทความ IT Support สไตล์โรงงาน"
+              }
+            }
+        })
+
+    </script>
+
+    <script>
+        window.addEventListener('scroll',function(){
+            let wintop = this.scrollY
+            let navbar = document.querySelector(".navbar")
+
+            let winheight = this.innerHeight
+            //console.log(winheight)
+            let docheight = document.querySelector("body").offsetHeight
+            let bar = document.querySelector(".progressBar")
+            let totalScroll = (wintop / (docheight - winheight))*100
+            bar.style.width = `${totalScroll}%`
+
+            navbar.classList.add("navbar-light", "fixed-top", "bg-light")
+            if(wintop >150){
+              //console.log('เปลียนพื้นหลังเป็นสีขาว')
+              //navbar-light bg-light
+              //navbar-dark  bg-transaparent
+              navbar.classList.remove("navbar-dark","bg-transaparent")
+              navbar.classList.add("navbar-light","bg-light")
+              
+            }else{
+              //console.log('เปลียนพื้นหลังเป็นโปร่งใส')
+              navbar.classList.remove("navbar-light","bg-light")
+              navbar.classList.add("navbar-dark","bg-transaparent")
+              
+             
+            }
+
+        })
+    </script>
+  </body>
+</html>

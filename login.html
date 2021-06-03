@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="shortcut icon"type="image/x-icon" href="assets\images\logo.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">    
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+   
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6">
+                <div class="card py-3 p-lg-5  shadow">
+                    <div class="card-title">
+                        <img src="assets/images/text_logo.png" class="img-fluid d-block mx-auto" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row mb-3">
+                                <label for="username" class="col-sm-3 col-form-label">ชื่ผู้ใช้งาน:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="username" class="form-control" placeholder="Username">
+                                </div>
+                                
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password" class="col-sm-3 col-form-label">รหัสผ่าน:</label>
+                                <div class="col-sm-9">
+                                    <input type="password" id="password" class="form-control" placeholder="Password">
+                                </div>
+                                
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-primary">เข้าสู่ระบบ</button>
+                            </div>
+                            <p class="text-center">
+                                ไม่มีบัญชีผู้ใช้<a href="register.html">สร้างบัญชีใหม่</a><br>
+                                <a href="./">กลับหน้าหลัก</a>
+                            </p>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------JavaScrip and dependencies------->
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
